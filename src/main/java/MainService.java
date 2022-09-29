@@ -11,13 +11,14 @@ public class MainService {
         Product p = context.getBean(Product.class);
         Cart cart = context.getBean(Cart.class);
         ProductRepository repo = context.getBean(ProductRepository.class);
-        System.out.println("Добро пожаловать в секретный обувной магазин)))!");
+        System.out.println("Добро пожаловать в секретный обувной магазин!");
         Scanner scanner = new Scanner(System.in);
         repo.manual();
         int id;
         String title;
+
         while (true) {
-            System.out.println("Наш товар:");
+            System.out.println("Наш товар :");
             repo.showAll();
             System.out.println("Корзина: ");
             cart.showAll();
